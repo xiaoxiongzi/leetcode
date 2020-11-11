@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/118.杨辉三角.js",
+      "program": "${workspaceFolder}/67.二进制求和.js",
       "request": "launch",
       "skipFiles": [
         "<node_internals>/**"
