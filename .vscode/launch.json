@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/67.二进制求和.js",
+      "program": "${workspaceFolder}/83.删除排序链表中的重复元素.js",
       "request": "launch",
       "skipFiles": [
         "<node_internals>/**"
