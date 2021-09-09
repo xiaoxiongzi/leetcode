@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/1382.将二叉搜索树变平衡.js",
+      "program": "${workspaceFolder}/119.杨辉三角-ii.js",
       "request": "launch",
       "skipFiles": [
         "<node_internals>/**"
