@@ -17,49 +17,22 @@
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
  */
-function TreeNode(val) {
-  this.val = val;
-  this.left = null;
-  this.right = null;
-}
-const root = {
-  val: 1,
-  left: {
-    val: 2,
-    left: {
-      val: 3
-    },
-    right: {
-      val: 4
-    }
-  },
-  right: {
-    val: 5,
-    right: {
-      val: 6
-    }
-  }
-}
 var flatten = function(root) {
   if(!root) {
-    return root
-  };
-  const line = new TreeNode();
-  let cur = line;
-  const stack = [];
-  stack.push(root);
-  while(stack.length) {
-    const node = stack.pop();
-    cur.val = node.val;
-    node.right && stack.push(node.right)
-    node.left && stack.push(node.left);
-    if(stack.length) {
-      cur.right = new TreeNode();
-      cur = cur.right;
-    }
+    return
   }
-  return line;
+  flatten(root.left);
+  flatten(root.right);
+  let left = root.left;
+  let right = root.right;
+  root.left = null;
+  root.right = left;
+  let p = root;
+  while(p.right) {
+    p = p.right
+  }
+  p.right = right;
 };
-flatten(root)
+
 // @lc code=end
 
