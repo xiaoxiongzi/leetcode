@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Launch Program",
-      "program": "${workspaceFolder}/203.移除链表元素.js",
+      "program": "${workspaceFolder}/25.k-个一组翻转链表.js",
       "request": "launch",
       "skipFiles": [
         "<node_internals>/**"
